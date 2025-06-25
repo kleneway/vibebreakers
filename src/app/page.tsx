@@ -30,7 +30,58 @@ export default async function Page() {
             {session ? (
               // Authenticated View
               <section className="max-w-7xl w-full space-y-8 animate-fade-in">
-                <h1> Welcome {session.user?.name}</h1>
+                <div className="text-center space-y-6">
+                  <h1 className="text-4xl font-bold text-gray-900 dark:text-white">
+                    Welcome {session.user?.name}!
+                  </h1>
+                  <p className="text-lg text-gray-600 dark:text-gray-300">
+                    Ready to break the ice with some fun games?
+                  </p>
+                </div>
+                
+                {/* Games Grid */}
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                  <Link
+                    href="/games/story-building-symphony"
+                    className="group bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 hover:shadow-xl transition-all duration-200 border border-gray-200 dark:border-gray-700 hover:border-blue-500 dark:hover:border-blue-400"
+                  >
+                    <div className="flex items-center space-x-3 mb-4">
+                      <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-500 rounded-lg flex items-center justify-center">
+                        <span className="text-white text-xl">📖</span>
+                      </div>
+                      <div>
+                        <h3 className="text-xl font-semibold text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400">
+                          Story Building Symphony
+                        </h3>
+                        <p className="text-sm text-gray-500 dark:text-gray-400">
+                          Collaborative storytelling
+                        </p>
+                      </div>
+                    </div>
+                    <p className="text-gray-600 dark:text-gray-300 text-sm">
+                      Create amazing stories together, one sentence at a time. Each player incorporates unique story elements into their contributions.
+                    </p>
+                    <div className="mt-4 flex items-center text-blue-600 dark:text-blue-400 text-sm font-medium">
+                      Play Now
+                      <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
+                    </div>
+                  </Link>
+                  
+                  {/* Placeholder for future games */}
+                  <div className="bg-gray-50 dark:bg-gray-700 rounded-xl p-6 border-2 border-dashed border-gray-300 dark:border-gray-600">
+                    <div className="text-center space-y-3">
+                      <div className="w-12 h-12 bg-gray-200 dark:bg-gray-600 rounded-lg flex items-center justify-center mx-auto">
+                        <span className="text-gray-500 text-xl">🎮</span>
+                      </div>
+                      <h3 className="text-lg font-semibold text-gray-500 dark:text-gray-400">
+                        More Games Coming Soon
+                      </h3>
+                      <p className="text-sm text-gray-400 dark:text-gray-500">
+                        We're working on exciting new icebreaker games!
+                      </p>
+                    </div>
+                  </div>
+                </div>
               </section>
             ) : (
               // Marketing View
