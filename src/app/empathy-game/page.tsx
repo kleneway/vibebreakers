@@ -1,3 +1,5 @@
+"use client";
+
 import { EmpathyEnigma } from '@/components/EmpathyEnigma';
 
 export default function EmpathyGamePage() {
