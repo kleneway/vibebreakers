@@ -4,6 +4,7 @@ import { getServerSession } from "next-auth";
 import { authOptions } from "@/lib/auth";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
+import { AuthenticityChallenge } from "@/components/AuthenticityChallenge";
 
 export const dynamic = "force-dynamic";
 
@@ -30,7 +31,19 @@ export default async function Page() {
             {session ? (
               // Authenticated View
               <section className="max-w-7xl w-full space-y-8 animate-fade-in">
-                <h1> Welcome {session.user?.name}</h1>
+                <div className="text-center mb-8">
+                  <h1 className="text-4xl font-bold mb-4">Welcome {session.user?.name}</h1>
+                  <p className="text-lg text-gray-600 dark:text-gray-300">
+                    Try out the Authenticity Challenge - an icebreaker game about stories and deception
+                  </p>
+                </div>
+                
+                <AuthenticityChallenge 
+                  playerNames={['Alice', 'Bob', 'Charlie', 'Diana', 'Eve']}
+                  onGameEnd={(results) => {
+                    console.log('Game completed with results:', results);
+                  }}
+                />
               </section>
             ) : (
               // Marketing View
