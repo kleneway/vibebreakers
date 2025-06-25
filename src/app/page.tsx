@@ -30,7 +30,26 @@ export default async function Page() {
             {session ? (
               // Authenticated View
               <section className="max-w-7xl w-full space-y-8 animate-fade-in">
-                <h1> Welcome {session.user?.name}</h1>
+                <div className="text-center py-12">
+                  <h1 className="text-4xl font-bold mb-6">Welcome {session.user?.name}!</h1>
+                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-4xl mx-auto">
+                    <Link
+                      href="/game/two-truths-and-lie"
+                      className="group bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 hover:shadow-xl transition-all duration-200 hover:scale-105"
+                    >
+                      <div className="text-center">
+                        <div className="text-4xl mb-4">🎭</div>
+                        <h2 className="text-xl font-semibold mb-2">Two Truths and a Lie</h2>
+                        <p className="text-gray-600 dark:text-gray-300">
+                          Can you spot the lie among the truths? A classic icebreaker game perfect for groups!
+                        </p>
+                        <div className="mt-4 text-purple-600 dark:text-purple-400 font-medium group-hover:text-purple-700 dark:group-hover:text-purple-300">
+                          Play Game →
+                        </div>
+                      </div>
+                    </Link>
+                  </div>
+                </div>
               </section>
             ) : (
               // Marketing View
