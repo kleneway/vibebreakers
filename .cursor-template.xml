@@ -1,0 +1,22 @@
+
+<TEMPLATE>
+<INSTRUCTIONS>
+Use the <CODEBASE> code as reference, and convert the high-level <TASK> into a set of very detailed step-by-step instructions that an AI coding agent can complete. This could be very long, that's okay. The entire code is not needed, but give snippets if needed, but be very specific about the file names.
+Only includes steps an AI coding agent can take. Do not include testing or any other work a human would do to confirm the task has been completed. 
+ALWAYS have the agent run a build when it is complete. Be specific and decisive about what the agent should do. 
+Do not include any additional meta instructions to the user. Use markdown formatting.
+</INSTRUCTIONS>
+<TASK>
+</TASK>
+<CURSOR_RULES>
+</CURSOR_RULES>
+<CODEBASE>
+</CODEBASE>
+<INSTRUCTIONS>
+Use the <CODEBASE> code as reference, and convert the high-level <TASK> into a set of very detailed step-by-step instructions that an AI coding agent can complete. This could be very long, that's okay. The entire code is not needed, but give snippets if needed, but be very specific about the file names.
+Only includes steps an AI coding agent can take. Do not include testing or any other work a human would do to confirm the task has been completed. 
+ALWAYS have the agent run a build when it is complete. Be specific and decisive about what the agent should do. 
+Do not include any additional meta instructions to the user. Use markdown formatting.
+</INSTRUCTIONS>
+
+</TEMPLATE>
