@@ -8,8 +8,9 @@ import { ThemeProvider } from "@/components/theme/ThemeProvider";
 import { ThemeAwareToast } from "@/components/theme/ThemeAwareToast";
 
 export const metadata: Metadata = {
-  title: "",
-  description: "",
+  title: "Emoji Pictionary - Three Team Edition",
+  description:
+    "Compete in teams to guess emoji prompts! First to buzz in gets to answer. Correct answers earn points, wrong answers lock you out. May the best team win!",
   icons: {
     icon: "/favicon.ico",
   },

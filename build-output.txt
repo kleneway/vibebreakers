@@ -1,0 +1,31 @@
+
+> nextjs-template@0.1.0 build
+> prisma generate && next build
+
+Environment variables loaded from .env
+Prisma schema loaded from prisma/schema.prisma
+
+✔ Generated Prisma Client (v6.3.0) to ./node_modules/@prisma/client in 68ms
+
+Start by importing your Prisma Client (See: https://pris.ly/d/importing-client)
+
+Tip: Want to react to database changes in your app as they happen? Discover how with Pulse: https://pris.ly/tip-1-pulse
+
+   ▲ Next.js 15.1.0
+   - Environments: .env
+
+   Creating an optimized production build ...
+ ✓ Compiled successfully
+   Linting and checking validity of types ...
+Failed to compile.
+
+./src/components/StoryBuildingSymphony.tsx:101:16
+Type error: 'gameState.story' is possibly 'undefined'.
+
+[0m [90m  99 |[39m         storyElement[33m:[39m currentPlayer[33m.[39massignedElement[33m,[39m[0m
+[0m [90m 100 |[39m         timestamp[33m:[39m [33mDate[39m[33m.[39mnow()[33m,[39m[0m
+[0m[31m[1m>[22m[39m[90m 101 |[39m         order[33m:[39m gameState[33m.[39mstory[33m.[39mlength [33m+[39m [35m1[39m[33m,[39m[0m
+[0m [90m     |[39m                [31m[1m^[22m[39m[0m
+[0m [90m 102 |[39m       }[33m;[39m[0m
+[0m [90m 103 |[39m[0m
+[0m [90m 104 |[39m       [90m// Calculate score based on story integration and creativity[39m[0m

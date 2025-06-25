@@ -7,6 +7,7 @@ import {
   createWSClient,
   wsLink,
   splitLink,
+  httpBatchLink,
 } from "@trpc/client";
 import { createTRPCReact } from "@trpc/react-query";
 import { useState } from "react";
@@ -54,16 +55,16 @@ export function TRPCReactProvider(props: { children: React.ReactNode }) {
           condition: (op) => !!wsClient && op.type === "subscription",
           true: wsLink({
             client: wsClient!,
-            transformer: SuperJSON,
+            transformer: SuperJSON as any,
           }),
           false: unstable_httpBatchStreamLink({
-            transformer: SuperJSON,
             url: getBaseUrl() + "/api/trpc",
             headers: () => {
               const headers = new Headers();
               headers.set("x-trpc-source", "nextjs-react");
               return headers;
             },
+            transformer: SuperJSON as any,
           }),
         }),
       ],
