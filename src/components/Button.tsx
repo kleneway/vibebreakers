@@ -6,6 +6,7 @@ interface ButtonProps {
   size?: "sm" | "md" | "lg";
   onClick?: () => void;
   className?: string;
+  disabled?: boolean;
 }
 
 export const Button: React.FC<ButtonProps> = ({
@@ -14,14 +15,17 @@ export const Button: React.FC<ButtonProps> = ({
   size = "md",
   onClick,
   className = "",
+  disabled = false,
 }) => {
   const baseStyles = "rounded-lg font-medium transition-all duration-200";
 
   const variantStyles = {
-    primary:
-      "bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white shadow-lg shadow-blue-500/20 hover:shadow-xl hover:shadow-blue-500/30",
-    secondary:
-      "bg-neutral-100 hover:bg-neutral-200 text-neutral-900 dark:bg-neutral-800 dark:hover:bg-neutral-700 dark:text-white",
+    primary: disabled
+      ? "bg-neutral-300 dark:bg-neutral-600 text-neutral-500 dark:text-neutral-400 cursor-not-allowed"
+      : "bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white shadow-lg shadow-blue-500/20 hover:shadow-xl hover:shadow-blue-500/30",
+    secondary: disabled
+      ? "bg-neutral-200 dark:bg-neutral-700 text-neutral-400 dark:text-neutral-500 cursor-not-allowed"
+      : "bg-neutral-100 hover:bg-neutral-200 text-neutral-900 dark:bg-neutral-800 dark:hover:bg-neutral-700 dark:text-white",
   };
 
   const sizeStyles = {
@@ -32,7 +36,8 @@ export const Button: React.FC<ButtonProps> = ({
 
   return (
     <button
-      onClick={onClick}
+      onClick={disabled ? undefined : onClick}
+      disabled={disabled}
       className={`${baseStyles} ${variantStyles[variant]} ${sizeStyles[size]} ${className}`}
     >
       {children}

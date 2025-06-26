@@ -1,0 +1,40 @@
+src/components/StoryBuildingSymphony.tsx(101,16): error TS18048: 'gameState.story' is possibly 'undefined'.
+src/components/StoryBuildingSymphony.tsx(117,30): error TS18048: 'gameState.players' is possibly 'undefined'.
+src/components/StoryBuildingSymphony.tsx(119,33): error TS18048: 'player.score' is possibly 'undefined'.
+src/components/StoryBuildingSymphony.tsx(124,10): error TS18048: 'gameState.currentPlayerIndex' is possibly 'undefined'.
+src/components/StoryBuildingSymphony.tsx(124,46): error TS18048: 'gameState.players' is possibly 'undefined'.
+src/components/StoryBuildingSymphony.tsx(125,30): error TS18048: 'gameState.story' is possibly 'undefined'.
+src/components/StoryBuildingSymphony.tsx(135,20): error TS2488: Type 'StoryContribution[] | undefined' must have a '[Symbol.iterator]()' method that returns an iterator.
+src/components/StoryBuildingSymphony.tsx(138,22): error TS18048: 'gameState.roundNumber' is possibly 'undefined'.
+src/components/StoryBuildingSymphony.tsx(147,26): error TS2345: Argument of type 'StoryContribution[] | undefined' is not assignable to parameter of type 'StoryContribution[]'.
+  Type 'undefined' is not assignable to type 'StoryContribution[]'.
+src/components/StoryBuildingSymphony.tsx(160,27): error TS18048: 'gameState.players' is possibly 'undefined'.
+src/components/StoryBuildingSymphony.tsx(160,45): error TS2538: Type 'undefined' cannot be used as an index type.
+src/components/StoryBuildingSymphony.tsx(165,8): error TS18048: 'gameState.currentPlayerIndex' is possibly 'undefined'.
+src/components/StoryBuildingSymphony.tsx(165,44): error TS18048: 'gameState.players' is possibly 'undefined'.
+src/components/StoryBuildingSymphony.tsx(166,24): error TS18048: 'gameState.players' is possibly 'undefined'.
+src/components/StoryBuildingSymphony.tsx(175,20): error TS18048: 'prev.roundNumber' is possibly 'undefined'.
+src/components/StoryBuildingSymphony.tsx(203,23): error TS18048: 'gameState.story' is possibly 'undefined'.
+src/components/StoryBuildingSymphony.tsx(244,25): error TS18048: 'gameState.players' is possibly 'undefined'.
+src/components/StoryBuildingSymphony.tsx(244,43): error TS2538: Type 'undefined' cannot be used as an index type.
+src/components/StoryBuildingSymphony.tsx(344,20): error TS18048: 'gameState.players' is possibly 'undefined'.
+src/components/StoryBuildingSymphony.tsx(345,7): error TS18048: 'prev.score' is possibly 'undefined'.
+src/components/StoryBuildingSymphony.tsx(345,20): error TS18048: 'current.score' is possibly 'undefined'.
+src/components/StoryBuildingSymphony.tsx(362,26): error TS2322: Type 'StoryContribution[] | undefined' is not assignable to type 'StoryContribution[]'.
+  Type 'undefined' is not assignable to type 'StoryContribution[]'.
+src/components/StoryBuildingSymphony.tsx(370,14): error TS18048: 'gameState.players' is possibly 'undefined'.
+src/components/StoryBuildingSymphony.tsx(371,31): error TS18048: 'b.score' is possibly 'undefined'.
+src/components/StoryBuildingSymphony.tsx(371,41): error TS18048: 'a.score' is possibly 'undefined'.
+src/components/StoryBuildingSymphony.tsx(442,9): error TS2322: Type 'StoryContribution[] | undefined' is not assignable to type 'StoryContribution[]'.
+  Type 'undefined' is not assignable to type 'StoryContribution[]'.
+src/components/StoryBuildingSymphony.tsx(446,24): error TS18048: 'gameState.story' is possibly 'undefined'.
+src/components/StoryBuildingSymphony.tsx(462,10): error TS18048: 'gameState.players' is possibly 'undefined'.
+src/components/TimeFrameSelector.tsx(60,12): error TS18048: 'player.assignedTimeFrames' is possibly 'undefined'.
+src/components/TwoTruthsAndLie.tsx(198,25): error TS2322: Type '"outline"' is not assignable to type '"primary" | "secondary" | undefined'.
+src/components/WisdomAnalyzer.tsx(183,60): error TS18048: 'letter.wordCount' is possibly 'undefined'.
+src/components/WisdomAnalyzer.tsx(331,43): error TS18048: 'insight.resonance' is possibly 'undefined'.
+src/components/WisdomAnalyzer.tsx(336,46): error TS18048: 'insight.resonance' is possibly 'undefined'.
+src/stories/Timer.stories.tsx(15,5): error TS2353: Object literal may only specify known properties, and 'secondsLeft' does not exist in type 'Partial<ArgTypes<TimerProps>>'.
+src/stories/Timer.stories.tsx(25,5): error TS2353: Object literal may only specify known properties, and 'secondsLeft' does not exist in type 'Partial<{ duration: number; onTimeUp: () => void; isActive: boolean; onReset?: (() => void) | undefined; size?: "lg" | "md" | "sm" | undefined; showProgress?: boolean | undefined; }> & { ...; }'.
+src/stories/Timer.stories.tsx(31,5): error TS2353: Object literal may only specify known properties, and 'secondsLeft' does not exist in type 'Partial<{ duration: number; onTimeUp: () => void; isActive: boolean; onReset?: (() => void) | undefined; size?: "lg" | "md" | "sm" | undefined; showProgress?: boolean | undefined; }> & { ...; }'.
+src/stories/Timer.stories.tsx(37,5): error TS2353: Object literal may only specify known properties, and 'secondsLeft' does not exist in type 'Partial<{ duration: number; onTimeUp: () => void; isActive: boolean; onReset?: (() => void) | undefined; size?: "lg" | "md" | "sm" | undefined; showProgress?: boolean | undefined; }> & { ...; }'.
