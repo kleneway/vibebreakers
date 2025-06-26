@@ -17,12 +17,6 @@ async function getSession() {
 }
 
 export default async function StoryBuildingSymphonyPage() {
-  const session = await getSession();
-
-  if (!session) {
-    redirect("/auth/signin");
-  }
-
   return (
     <div className="min-h-screen bg-gradient-to-b from-white to-neutral-50 dark:from-neutral-900 dark:to-neutral-950">
       <div className="container mx-auto px-4 py-8">

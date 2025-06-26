@@ -12,6 +12,7 @@ import {
   ArrowRight,
   Timer,
   Zap,
+  Smile,
 } from "lucide-react";
 
 // Game data with beautiful descriptions and icons
@@ -108,6 +109,17 @@ const games = [
     icon: MessageCircle,
     color: "from-red-500 to-pink-600",
     hoverColor: "hover:from-red-600 hover:to-pink-700",
+    participants: "2-8 players",
+    duration: "30-40 min",
+    difficulty: "Hard",
+  },
+  {
+    id: "emoji-pictionary",
+    title: "Emoji Pictionary",
+    description: "Guess the emoji from the description",
+    icon: Smile,
+    color: "from-blue-500 to-blue-600",
+    hoverColor: "hover:from-blue-600 hover:to-blue-700",
     participants: "2-8 players",
     duration: "30-40 min",
     difficulty: "Hard",
